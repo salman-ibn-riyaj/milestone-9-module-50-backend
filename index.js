@@ -54,6 +54,7 @@ const run = async () => {
       const cursor = userCollection.find();
       const result = await cursor.toArray();
       res.send(result);
+      
     });
 
     app.get('/users/:id', async(req, res)=>{
